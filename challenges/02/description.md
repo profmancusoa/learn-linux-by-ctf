@@ -1,31 +1,30 @@
 # ls
 
-The terminal is a wonderful thing!
+Il terminale è una cosa meravigliosa!
 
-In the past challenges, you've run different *commands* - such as `cat` and `flag`.
+Nelle sfide precedenti, hai eseguito diversi *comandi* – come `cat` e `flag`.
 
-Commands can also have different *arguments*.
+I comandi possono anche avere diversi *argomenti*.
 
-Arguments are parameters to a program. The program will behave differently based on its arguments.
+Gli argomenti sono parametri passati a un programma. Il programma si comporterà in modo diverso in base agli argomenti ricevuti.
 
-Most commands support the `--help` argument.
+La maggior parte dei comandi supporta l’argomento `--help`.
 
-When run with a `--help` argument, a command will display a list of the different arguments it receives.
+Quando esegui un comando con l’argomento `--help`, verrà mostrato un elenco degli argomenti disponibili per quel comando.
 
-## Try is yourself!
-    run: `cat --help`
+## Prova tu stesso!
+    esegui: `cat --help` o `ls --help`
 
 
-# Your goal
-The `ls` command *lists* files at the current directory. It has other options as well ;)
+# Il tuo obiettivo
+Il comando `ls` *elenca* i file nella directory corrente. Ha anche altre opzioni ;)
 
-There is a hidden file containing the flag, find it!
+C'è un file nascosto che contiene la flag, trovalo!
 
-!!! note: hidden files
-    Hidden files in linux begin with a *"."*. For example - the file *".hidden"* is a hidden file.
-    
+!!! nota: file nascosti  
+    I file nascosti in Linux iniziano con un *"."*. Ad esempio – il file *".hidden"* è un file nascosto.
 
-## Useful commands
+## Comandi utili
 * cat
 * ls
 * cd

@@ -1,14 +1,13 @@
-# Introduction
+# Introduzione
 
-Welcome to Linux by CTF!
-Linux by CTF is a tutorial aiming to teach you Linux in a CTF-like manner starting from the
-basics of commandline.
+Benvenuto in Learn Linux by CTF!  
+Linux by CTF è un metodo che ha l’obiettivo di insegnarti Linux in uno stile simile ai CTF (Capture The Flag), partendo dalle basi della riga di comando.
 
-The tutorial is split into several challenges. In order to complete a challenge you must find a flag: a series of characters indicating that you have completed the challenge.
+Il percorso di apprendimento è suddiviso in diverse sfide. Per completare una sfida, devi trovare una flag: una serie di caratteri che indica che hai completato la sfida.
 
-The flag for this challenge is **{{flag}}**
+Il flag per questa sfida è **{{flag}}**
 
-Start your quest by typing:
+Inizia la tua avventura digitando:  
 `flag`
 
-
+ma prima devi uscire da questa schermata premendo `q`

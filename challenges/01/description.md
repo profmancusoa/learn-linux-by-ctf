@@ -1,15 +1,11 @@
 # Cat
 
-Let's begin our first challenge.
-The command `cat` can display the output of files.
-Type `cat flag.txt` in order to get the next flag :)
+Iniziamo la nostra prima sfida.  
+Il comando `cat` può visualizzare il contenuto di uno o più file.  
+Digita `cat flag.txt` per ottenere la prossima flag :)
 
+!!! nota: Il comando `display-challenge` mostrerà di nuovo la descrizione della sfida !!!
 
-!!! note: display description of a challenge
-	the command `display-challenge` will display the challenge description again
-
-
-## Useful commands
+## Comandi utili
 * cat
 * ls
-* touch

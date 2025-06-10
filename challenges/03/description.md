@@ -1,12 +1,12 @@
-# Paths
+# Percorsi
 
-Everything in Linux is a file, as you journey deeper into Linux you’ll understand this, but for now just keep that in mind. 
+**In Linux tutto è un file**. Man mano che approfondirai il sistema, capirai meglio cosa significa, ma per ora tienilo semplicemente a mente.
 
-Every file is organized in a hierarchical directory tree. The first directory in the filesystem is aptly named the root directory.
+Ogni file è organizzato in un albero gerarchico di directory. La prima directory del filesystem è chiamata, giustamente, directory **root**.
 
-The root directory has many folders and files which you can store more folders and files, etc.
+La directory root contiene molte altre directory e file, al cui interno puoi inserire altre directory e file, e così via.
 
-Here is an example of what the directory tree looks like:
+Ecco un esempio di come appare l’albero delle directory:
 
 ```
 /
@@ -22,44 +22,47 @@ Here is an example of what the directory tree looks like:
 |-- var
 ```
 
-The location of these files and directories are referred to as paths.
 
-If you had a folder named home with a folder inside of it named guy and another folder in that folder called Movies, that path would look like this: `/home/guy/Movies`, pretty simple huh?
+La posizione di questi file e directory viene chiamata *percorso* (path).
 
+Se avessi una directory chiamata `home` con dentro una directory chiamata `guy`, e dentro quest’ultima una directory chiamata `Movies`, il percorso sarebbe: `/home/guy/Movies`. Semplice, no?
 
-Navigation of the filesystem, much like real life is helpful if you know where you are and where you are going. To see where you are, you can use the `pwd` command, this command means “print working directory” and it just shows you which directory you are in, note the path stems from the root directory.
-
-
-# Navigation
-
-Remember we’ll need to navigate our way using paths. There are two different ways to specify a path, with *absolute* and *relative* paths:
-
-- _Absolute path_: This is the path from the root directory. he root directory is commonly shown as a slash. Every time your path starts with `/` it means you are starting from the root directory. For example, `/home/guy/Desktop`.
-
-- _Relative path_: This is the path from where you are currently in filesystem. If I was in location `/home/guy/Documents` and wanted to get to a directory inside Documents called taxes, I don’t have to specify the whole path from root like `/home/guy/Documents/taxes`, I can just go to `taxes/` instead.
+Navigare nel filesystem, proprio come nella vita reale, è più facile se sai dove sei e dove stai andando.  
+Per vedere dove ti trovi, puoi usare il comando `pwd`. Questo comando significa “print working directory” (stampa la directory corrente) e ti mostra in quale directory ti trovi. Nota che il percorso parte dalla directory root, cioè è un **percorso assoluto**.
 
 
-It can get pretty tiring navigating with absolute and relative paths all the time, luckily there are some shortcuts to help you out.
+# Navigazione
 
-- `.`  marks the _current directory_.
-- `..` markes the _parent directory_ - which is the directory that contains the current directory.
-- `~` marks the _home directory_ - which defaults to your "home directory", such as `/home/guy`.
-- `-` marks the _previous directory_ - this will take you to the previous directory you have visited.
+Ricorda che dobbiamo navigare usando i percorsi. Ci sono due modi per specificare un percorso: *assoluto* e *relativo*:
 
-Move between directories using the `cd` command.
+- _Percorso assoluto_: È il percorso dalla directory root. La directory root è indicata con uno slash `/`. Ogni volta che un percorso inizia con `/`, significa che parte dalla root. Esempio: `/home/guy/Desktop`.
+
+- _Percorso relativo_: È il percorso rispetto alla directory in cui ti trovi attualmente.  
+  Se ti trovi in `/home/guy/Documents` e vuoi andare in una sottodirectory chiamata `taxes`, non devi specificare l’intero percorso come `/home/guy/Documents/taxes`, ti basta scrivere `taxes/`.
+
+Navigare con percorsi assoluti e relativi può diventare stancante, ma per fortuna ci sono alcune scorciatoie utili:
+
+- `.` indica la _directory corrente_.
+- `..` indica la _directory superiore_ – ovvero quella che contiene la directory corrente.
+- `~` indica la _home directory_ – che di default è la tua directory personale, ad esempio `/home/guy`.
+- `-` indica la _directory precedente_ – ti riporta alla directory visitata prima.
+
+Per spostarti tra le directory usa il comando `cd` (change directory).
 
 
-# Your goal
+# Il tuo obiettivo
 
-Find the flag! It is located at a file called `flag.txt`
+Trova la flag! Si trova in un file chiamato `flag.txt`
 
 
-# Useful commands
+# Comandi utili
 - pwd
 - ls
 - cd
 - find
 
 
-!!! note:
-    The `flag` command can receive an optional argument stating a challenge name. You can move to challenges you've solved using that argument. For example - `flag challenge01` will ask you for the first flag you've found (in challenge00). The flag for challenge00 is "none".
+!!! nota:  
+    Il comando `flag` può ricevere un argomento opzionale che indica il nome di una sfida. Puoi tornare a sfide già risolte usando quell’argomento.  
+    Ad esempio: `flag challenge01` ti chiederà la flag trovata nella prima sfida (`challenge00`).  
+    La flag per `challenge00` è "none".

@@ -1,15 +1,16 @@
 # mkdir
 
-Create directories using the `mkdir` command! Be sure to check out the command's options.
+Crea directory utilizzando il comando `mkdir`! Assicurati di controllare le opzioni disponibili per questo comando.
 
-In addition, the `touch` command will create an empty file.
-
-
-# Your goal
-Run the command `challenge04` for further instruction.
+Inoltre, il comando `touch` crea un file vuoto.
 
 
-# Useful commands
+# Il tuo obiettivo
+Esegui il comando `challenge04` per ulteriori istruzioni.
+
+
+# Comandi utili
 - mkdir
 - cd
 - touch
+
