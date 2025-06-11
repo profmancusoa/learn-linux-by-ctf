@@ -1,5 +1,6 @@
 # builder image
-FROM ubuntu:latest AS builders
+#FROM ubuntu:latest AS builders
+FROM debian:12-slim AS builders
 
 # install dependencies
 RUN apt update
@@ -24,15 +25,34 @@ RUN cd scripts && make
 RUN chmod +x scripts/create_users.py
 RUN ./scripts/create_users.py
 
+
+COPY gen_dirtree.sh  /tmp
+# gen dir tree to disseminate flags: this must be done per every challenge where is needed
+
+# challenge01
+RUN chown -R challenge01:challenge01 /home/challenges/home/challenge01/rabbit_hole
+USER challenge01
+RUN /tmp/gen_dirtree.sh /home/challenges/home/challenge01/rabbit_hole 12345 128 64
+USER root
+
+# challenge02
+RUN chown -R challenge02:challenge02 /home/challenges/home/challenge02/cerca
+USER challenge02
+RUN /tmp/gen_dirtree.sh /home/challenges/home/challenge02/cerca 453 256 128
+USER root
+
+
 #################
 #################
 
 # build final image
-FROM ubuntu:latest AS release
+#FROM ubuntu:latest AS release
+FROM debian:12 AS release
+
 
 # install runtime tools
 RUN apt update
-RUN apt install -y python3 
+RUN apt install -y python3 man-db man manpages file tree info vim
 
 # set proper timezone
 RUN echo "Europe/Rome" > /etc/timezone 
